@@ -1,0 +1,108 @@
+.usercard {
+  width: 15em;
+  height: auto;
+  background-color: var(--bg-color5);
+  border-radius: 1em;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.usercard:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 2em #0846a4;
+  }
+
+.usercard__h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  font-size: 1.3rem;
+  color: var(--text-color3);
+  text-align: center;
+  background-color: var(--bg-color3);
+  border-radius: 0.6em 0.6em 0px 0px;
+}
+
+.usercard__div__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.usercard__img {
+  border: solid var(--bg-color3);
+  margin-top: 1em;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.usercard__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  list-style: none;
+}
+
+.usercard__li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+
+.usercard__li--span--tittle {
+  color: var(--text-color4);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.usercard__li--span--content {
+  color: var(--text-color2);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.usercard__hr {
+  color: #555;
+  filter: opacity(0.5);
+}
+
+.usercard__footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0.5em;
+}
+
+.usercard__footer__botton {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border: none;
+  border-radius: 1em;
+  transition: filter 0.2s, transform 0.3s;
+  color: var(--text-color3);
+}
+
+.usercard__footer__botton:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+.usercard__botton__icon {
+  font-size: 1.3em;
+}
+
+.botton--delete {
+  background-color: var(--bg-color4);
+}
+
+.botton--edit {
+  background-color: #42b72a;
+}

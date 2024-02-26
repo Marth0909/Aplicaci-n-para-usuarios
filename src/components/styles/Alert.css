@@ -1,0 +1,76 @@
+.alert{
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--bg-color1);
+  padding: 2em 1.5em 2.5em;
+  border-radius: 0.8em;
+  position: relative;
+}
+
+.alert__x {
+  position: absolute;
+  top: 0.3em;
+  right: 1em;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(214, 35, 35);
+}
+
+.alert__x:hover {
+  transform: scale(1.2);
+}
+
+.alert__tittle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  color: var(--text-color4);
+}
+
+.alert__message {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: var(--text-color2);
+}
+
+.alert__message--span{
+  color: var(--text-color4);
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.alert__btn {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5em 0;
+  font-weight: 300;
+  background-color: var(--bg-color3);
+  color: var(--text-color3);
+  border-radius: 0.5em;
+  transition: filter 0.2s, transform 0.3s;
+  cursor: pointer;
+}
+
+.alert__btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.02);
+}
+
+.alert__btn--cancel {
+  text-align: center;
+  background-color: var(--bg-color4);
+}
+
+.alert__icon__div {
+ display: flex;
+ justify-content: center;
+}
+
+.alert__icon {
+  color: rgb(255, 166, 0);
+  font-size: 4rem;
+  margin-bottom: 0.2em;
+}

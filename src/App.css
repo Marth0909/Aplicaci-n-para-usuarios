@@ -1,0 +1,83 @@
+.app {
+  margin: 5em;
+}
+
+.app__form,
+.alert__form,
+.modal__div {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #0003;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  z-index: 1;
+}
+
+.app__h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0.6em ;
+  color: #000e1f;
+}
+
+.app__button {
+  position: fixed;
+  right: 6em;
+  top: 1em;
+  height: 3em;
+  width: 8em;
+  background-color: var(--bg-color3);
+  border-color: var(--boder-color1);
+  border-radius: 0.2em;
+  transition: filter 0.2s, transform 0.3s;
+  cursor: pointer;
+  z-index: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-color3);
+  margin-bottom: 1em;
+}
+
+.app__button:hover {
+  filter: brightness(1.2);
+  transform: scale(1.02);
+}
+
+.app__button--icon {
+  font-size: 1em;
+  color: var(--text-color3);
+  opacity: 0.7;
+  margin-top: 0.6em;
+  margin-right: 0.3em;
+ 
+}
+
+
+
+.form__close,
+.alert__close,
+.modal__close {
+  transform: scale(0);
+}
+
+.app__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+}
+
+@media (max-width:625px) {
+  .app__button {
+    right: 1.2em;
+    bottom: 1.2em;
+    height: 3em;
+    width: 3em;
+  }
+}
