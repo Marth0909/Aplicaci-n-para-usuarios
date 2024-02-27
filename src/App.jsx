@@ -15,7 +15,7 @@ function App() {
   const [comment, setComment] = useState()
   const [modalClose, setModalClose] = useState(true)
 
-  const url = 'http://localhost:8082/persons'
+  const url = 'https://api-rest-app-usuarios.onrender.com/persons'
 
   const [ users, createUser, getUsers, updateUser, deleteUser ] = useFetch({
     url,

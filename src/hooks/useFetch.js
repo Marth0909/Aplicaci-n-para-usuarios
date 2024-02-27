@@ -14,7 +14,7 @@ const useFetch = ( {baseUrl,
   //READ
   const getApi = () => {
     // const url = `${baseUrl}/persons/`
-    const url = ('http://localhost:8082/persons')
+    const url = 'https://api-rest-app-usuarios.onrender.com/persons'
     axios.get(url)
     .then(res => {
       setResponde(res.data)
@@ -22,10 +22,12 @@ const useFetch = ( {baseUrl,
     .catch(err => console.log(err))
   }
 
+  
+
   //CREATE
   const createApi = (data) => {
     // const url = `${baseUrl}/persons/`
-    const url = ('http://localhost:8082/persons')
+    const url = `https://api-rest-app-usuarios.onrender.com/persons/${id}/`
     axios.post(url, data)
     .then(res => {
 
@@ -47,7 +49,7 @@ const useFetch = ( {baseUrl,
   //DELETE
   const deleteApi = (id) => {
 
-    const url = `http://localhost:8082/persons/${id}/`
+    const url = `https://api-rest-app-usuarios.onrender.com/persons/${id}/`
     axios.delete(url)
     .then(res =>{
       
@@ -69,7 +71,7 @@ const useFetch = ( {baseUrl,
 
   //UPDATE
   const updateApi = (id, data) => {
-    const url = `http://localhost:8082/persons/${id}/`
+    const url = `https://api-rest-app-usuarios.onrender.com/persons/${id}/`
     axios.put(url, data)
     .then(res => {
 
