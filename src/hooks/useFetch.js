@@ -27,7 +27,7 @@ const useFetch = ( {baseUrl,
   //CREATE
   const createApi = (data) => {
     // const url = `${baseUrl}/persons/`
-    const url = `https://api-rest-app-usuarios.onrender.com/persons/${id}/`
+    const url = 'https://api-rest-app-usuarios.onrender.com/persons'
     axios.post(url, data)
     .then(res => {
 
